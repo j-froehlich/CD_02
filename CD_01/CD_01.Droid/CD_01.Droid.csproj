@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Uno.GalaSoft.MvvmLight">
+      <Version>5.4.0-uno.138</Version>
+    </PackageReference>
+    <PackageReference Include="Uno.GalaSoft.MvvmLight.Platform">
+      <Version>5.4.0-uno.138</Version>
+    </PackageReference>
     <PackageReference Include="Uno.Material">
       <Version>1.0.0-dev.782</Version>
     </PackageReference>
@@ -101,6 +107,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values-night\colors.xml" />
   </ItemGroup>
   <Import Project="..\CD_01.Shared\CD_01.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -118,6 +118,12 @@
     <PackageReference Include="System.Text.Json">
       <Version>6.0.0-preview.4.21253.7</Version>
     </PackageReference>
+    <PackageReference Include="Uno.GalaSoft.MvvmLight">
+      <Version>5.4.0-uno.138</Version>
+    </PackageReference>
+    <PackageReference Include="Uno.GalaSoft.MvvmLight.Platform">
+      <Version>5.4.0-uno.138</Version>
+    </PackageReference>
     <PackageReference Include="Uno.Material">
       <Version>1.0.0-dev.782</Version>
     </PackageReference>
