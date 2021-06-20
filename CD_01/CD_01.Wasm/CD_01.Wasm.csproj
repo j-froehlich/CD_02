@@ -39,6 +39,8 @@
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.2" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
     <PackageReference Include="Uno.Extensions.Logging.WebAssembly.Console" Version="1.1.0" />
+    <PackageReference Include="Uno.GalaSoft.MvvmLight" Version="5.4.0-uno.138" />
+    <PackageReference Include="Uno.GalaSoft.MvvmLight.Platform" Version="5.4.0-uno.138" />
     <PackageReference Include="Uno.Material" Version="1.0.0-dev.782" />
     <PackageReference Include="Uno.UI.WebAssembly" Version="3.9.0-dev.14" />
     <PackageReference Include="Uno.UI.RemoteControl" Version="3.9.0-dev.14" Condition="'$(Configuration)'=='Debug'" />
