@@ -4,8 +4,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using ClickDummy.Shared.Helpers;
-using ClickDummy.Shared.Views;
+using CD_01.Helpers;
+using CD_01.Views;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.System;
@@ -21,7 +21,7 @@ using muxc = Microsoft.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace ClickDummy.Shared.Views
+namespace CD_01.Views
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -112,8 +112,8 @@ namespace ClickDummy.Shared.Views
             {
                 var selectedItem = (NavigationViewItem)args.SelectedItem;
                 string selectedItemTag = ((string)selectedItem.Tag);
-                sender.Header = "ClickDummy " + selectedItemTag.Substring(selectedItemTag.Length - 1);
-                string pageName = "ClickDummy.Shared.Views." + selectedItemTag;
+                sender.Header = "CD_01 " + selectedItemTag.Substring(selectedItemTag.Length - 1);
+                string pageName = "CD_01.Views." + selectedItemTag;
                 Type pageType = Type.GetType(pageName);
                 ContentFrame.Navigate(pageType);
             }
@@ -124,7 +124,7 @@ namespace ClickDummy.Shared.Views
 
 
 
-        //        private void OnPaneDisplayModeChanged(DependencyObject sender, DependencyProperty dp)
+        //        private void OnPaneDisplayModeChanged(Dependencyobject sender, DependencyProperty dp)
         //        {
         //            var navigationView = sender as muxc.NavigationView;
         //            NavigationRootPage.Current.AppTitleBar.Visibility = navigationView.PaneDisplayMode == muxc.NavigationViewPaneDisplayMode.Top ? Visibility.Collapsed : Visibility.Visible;

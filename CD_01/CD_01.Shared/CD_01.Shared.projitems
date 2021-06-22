@@ -18,22 +18,88 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\FromBooleanToDoubleConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\FromEnumerableAnyToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\FromEnumerableToCountConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\FromStateItemsRemainingToPluralConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\FromStateItemsRemainingToProgressConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\StringFormatConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\DialogExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\DialogManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ErrorDialogHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ErrorMessageHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\NavigationSyncHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\NotOperatorValueConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Image.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProbeSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Probe.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DataSeries.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Job.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Project.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Customer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DataSeriesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mvvm\BindableBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mvvm\DelegateCommands.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DataSerieViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\JobViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MenuItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProjectViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\UserViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Analysing\AnalysePage.xaml.cs">
+      <DependentUpon>AnalysePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Configuration\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DataOrganization\DataPage.xaml.cs">
+      <DependentUpon>DataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DataOrganization\DataSerieView.xaml.cs">
+      <DependentUpon>DataSerieView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Graphs\MultiAxes.xaml.cs">
+      <DependentUpon>MultiAxes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\MainNavigation.xaml.cs">
       <DependentUpon>MainNavigation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitorFullScreen.xaml.cs">
+      <DependentUpon>MonitorFullScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitoringSessionComponent.xaml.cs">
+      <DependentUpon>MonitoringSessionComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitoringSessionComponentNoControl.xaml.cs">
+      <DependentUpon>MonitoringSessionComponentNoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitorPage.xaml.cs">
+      <DependentUpon>MonitorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitorSingleView.xaml.cs">
+      <DependentUpon>MonitorSingleView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\NavPage.xaml.cs">
       <DependentUpon>NavPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Reporting\ReportPage.xaml.cs">
+      <DependentUpon>ReportPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Shared\AppBar.xaml.cs">
+      <DependentUpon>AppBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Shared\FatalErrorPage.xaml.cs">
+      <DependentUpon>FatalErrorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Shared\StatusBar.xaml.cs">
+      <DependentUpon>StatusBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Signal\SignalPage.xaml.cs">
+      <DependentUpon>SignalPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
@@ -44,11 +110,119 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Application\Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Application\Converters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Application\Fonts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Application\NavigationViewOverride.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Application\_Application.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\ColorPaletteOverride.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Controls\Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Controls\Checkbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Controls\RadioButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Controls\_Controls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Globals.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Analysing\AnalysePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Configuration\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\DataOrganization\DataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\DataOrganization\DataSerieView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Graphs\MultiAxes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Views\MainNavigation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitorFullScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitoringSessionComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitoringSessionComponentNoControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Monitoring\MonitorSingleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Views\NavPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Reporting\ReportPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Shared\AppBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Shared\FatalErrorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Shared\StatusBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Signal\SignalPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

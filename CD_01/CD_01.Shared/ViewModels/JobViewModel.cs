@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System.Collections.objectModel;
 using System.Text;
 using CD_01.Models;
 
@@ -9,21 +9,21 @@ namespace CD_01.ViewModels
     class JobViewModel
     {
 
-        public ObservableCollection<Student> Students
+        public ObservableCollection<Job> Jobs
         {
             get;
             set;
         }
 
-        public void LoadStudents()
-        {
-            ObservableCollection<Student> students = new ObservableCollection<Student>();
+        //public void LoadJobs()
+        //{
+        //    ObservableCollection<Job> jobs = new ObservableCollection<Job>();
 
-            students.Add(new Student { FirstName = "Mark", LastName = "Allain" });
-            students.Add(new Student { FirstName = "Allen", LastName = "Brown" });
-            students.Add(new Student { FirstName = "Linda", LastName = "Hamerski" });
+        //    jobs.Add(new Job { FirstName = "Mark", LastName = "Allain" });
+        //    jobs.Add(new Job { FirstName = "Allen", LastName = "Brown" });
+        //    jobs.Add(new Job { FirstName = "Linda", LastName = "Hamerski" });
 
-            Students = students;
-        }
+        //    Jobs = jobs;
+        //}
     }
 }

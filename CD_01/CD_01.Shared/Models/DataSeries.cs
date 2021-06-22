@@ -5,57 +5,163 @@ using System.Text;
 
 namespace CD_01.Models
 {
-    class DataSeries
+    class DataSerieModel { }
+
+    public class DataSerie : INotifyPropertyChanged
     {
-    }
+        private int id;
+        private string name;
+        private string description;
+        private Array imageIds;
+        private object parameter;
+        private DateTime creationDate;
+        private DateTime lastChanged;
+        private object history;
+        private int status;
 
-    public class StudentModel { }
-
-    public class Student : INotifyPropertyChanged
-    {
-        private string firstName;
-        private string lastName;
-
-        public string FirstName
+        public int DataSerieId
         {
             get
             {
-                return firstName;
+                return id;
             }
 
             set
             {
-                if (firstName != value)
+                if (id != value)
                 {
-                    firstName = value;
-                    RaisePropertyChanged("FirstName");
-                    RaisePropertyChanged("FullName");
+                    id = value;
+                    RaisePropertyChanged("DataSerieId");
+                    // RaisePropertyChanged("FullName");
                 }
             }
         }
 
-        public string LastName
-        {
-            get { return lastName; }
-
-            set
-            {
-                if (lastName != value)
-                {
-                    lastName = value;
-                    RaisePropertyChanged("LastName");
-                    RaisePropertyChanged("FullName");
-                }
-            }
-        }
-
-        public string FullName
+        public string DataSerieName
         {
             get
             {
-                return firstName + " " + lastName;
+                return name;
+            }
+
+            set
+            {
+                if (name != value)
+                {
+                    name = value;
+                    RaisePropertyChanged("DataSerieName");
+                }
             }
         }
+
+        public string DataSerieDescription
+        {
+            get { return description; }
+
+            set
+            {
+                if (description != value)
+                {
+                    description = value;
+                    RaisePropertyChanged("DataSerieDescription");
+                }
+            }
+        }
+
+        // TODO:placeholder implementation
+        public Array DataSerieImages
+        {
+            get { return imageIds; }
+
+            set
+            {
+                if (imageIds != value)
+                {
+                    imageIds = value;
+                    RaisePropertyChanged("DataSerieImages");
+                }
+            }
+        }
+
+        // TODO:placeholder implementation
+        public object DataSerieParameters
+        {
+            get { return parameter; }
+
+            set
+            {
+                if (parameter != value)
+                {
+                    parameter = value;
+                    RaisePropertyChanged("DataSerieParameters");
+                }
+            }
+        }
+
+        public DateTime DataSerieCreated
+        {
+            get { return creationDate; }
+
+            set
+            {
+                if (creationDate != value)
+                {
+                    creationDate = value;
+                    RaisePropertyChanged("DataSerieCreated");
+                }
+            }
+        }
+
+        public DateTime DataSerieChanged
+        {
+            get { return lastChanged; }
+
+            set
+            {
+                if (lastChanged != value)
+                {
+                    lastChanged = value;
+                    RaisePropertyChanged("DataSerieChanged");
+                }
+            }
+        }
+
+        // object could contain change history of the DataSerie
+        public object DataSerieHistory
+        {
+            get { return history; }
+
+            set
+            {
+                if (history != value)
+                {
+                    history = value;
+                    RaisePropertyChanged("DataSerieHistory");
+                }
+            }
+        }
+
+        public int DataSerieStatus
+        {
+            get { return status; }
+
+            set
+            {
+                if (status != value)
+                {
+                    status = value;
+                    RaisePropertyChanged("DataSerieStatus");
+                }
+            }
+        }
+
+        //public string FullName
+        //{
+        //    get
+        //    {
+        //        return firstName + " " + lastName;
+        //    }
+        //}
 
         public event PropertyChangedEventHandler PropertyChanged;
 

@@ -5,55 +5,137 @@ using System.Text;
 
 namespace CD_01.Models
 {
-    class Job
+    class JobModel { }
+
+    public class Job : INotifyPropertyChanged
     {
-    }
 
-    public class StudentModel { }
+        private int id;
+        private string name;
+        private string description;
+        private object settings;
+        private DateTime creationDate;
+        private DateTime lastChanged;
+        private object history;
+        private int status;
 
-    public class Student : INotifyPropertyChanged
-    {
-        private string firstName;
-        private string lastName;
-
-        public string FirstName
+        public int JobId
         {
             get
             {
-                return firstName;
+                return id;
             }
 
             set
             {
-                if (firstName != value)
+                if (id != value)
                 {
-                    firstName = value;
-                    RaisePropertyChanged("FirstName");
-                    RaisePropertyChanged("FullName");
+                    id = value;
+                    RaisePropertyChanged("JobId");
                 }
             }
         }
 
-        public string LastName
-        {
-            get { return lastName; }
-
-            set
-            {
-                if (lastName != value)
-                {
-                    lastName = value;
-                    RaisePropertyChanged("LastName");
-                    RaisePropertyChanged("FullName");
-                }
-            }
-        }
-
-        public string FullName
+        public string JobName
         {
             get
             {
-                return firstName + " " + lastName;
+                return name;
+            }
+
+            set
+            {
+                if (name != value)
+                {
+                    name = value;
+                    RaisePropertyChanged("JobName");
+                }
+            }
+        }
+
+        public string JobDescription
+        {
+            get { return description; }
+
+            set
+            {
+                if (description != value)
+                {
+                    description = value;
+                    RaisePropertyChanged("JobDescription");
+                }
+            }
+        }
+
+        // TODO:placeholder implementation
+        public object JobSettings
+        {
+            get { return settings; }
+
+            set
+            {
+                if (settings != value)
+                {
+                    settings = value;
+                    RaisePropertyChanged("JobSettings");
+                }
+            }
+        }
+
+        public DateTime JobCreated
+        {
+            get { return creationDate; }
+
+            set
+            {
+                if (creationDate != value)
+                {
+                    creationDate = value;
+                    RaisePropertyChanged("JobCreated");
+                }
+            }
+        }
+
+        public DateTime JobChanged
+        {
+            get { return lastChanged; }
+
+            set
+            {
+                if (lastChanged != value)
+                {
+                    lastChanged = value;
+                    RaisePropertyChanged("JobChanged");
+                }
+            }
+        }
+
+        // object could contain change history of the Job
+        public object JobHistory
+        {
+            get { return history; }
+
+            set
+            {
+                if (history != value)
+                {
+                    history = value;
+                    RaisePropertyChanged("JobHistory");
+                }
+            }
+        }
+
+        public int JobStatus
+        {
+            get { return status; }
+
+            set
+            {
+                if (status != value)
+                {
+                    status = value;
+                    RaisePropertyChanged("JobStatus");
+                }
             }
         }
 
